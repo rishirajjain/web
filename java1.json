@@ -1,0 +1,25 @@
+function clicked(){
+    
+    var user = document.getElementById('username');
+    var pass = document.getElementById('password');
+    
+    var usernames = [
+    {"user1":"Johnny", "password":"donkey"},
+    {"user1":"test", "password":"exam"},
+    {"user1":"sarath","password": "Jim"}
+];
+var j=0;
+    for(i=0;i<3;i++)
+{
+    if(user.value == usernames[i].user1 && pass.value == usernames[i].password)
+    {
+    j=j+1;
+        window.open("homepage.html");
+break;
+    }
+}
+    if(j==0)
+{
+alert("please check the password/username")
+}
+}
